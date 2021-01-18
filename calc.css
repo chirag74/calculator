@@ -16,6 +16,7 @@ body{
     display: grid;
     border: 2px solid black;
 }
+
 .calculator .value{
     grid-column: span 4;
     height: 100px;
@@ -36,6 +37,7 @@ border: 1px solid rgba(0,0,0,.1);
 font-size: 25px;
 
 }
+
 .calculator span:active{
     background: #3C4C5D;
     
@@ -47,6 +49,22 @@ font-size: 25px;
 .calculator span.plus{
     grid-row: span 2;
     height:120px;
+}
+@media only screen and (max-width:600px){
+    .calculator{
+        height: 100%;
+        width:100%;
+    }
+    .calculator span{
+        height: 100%;
+        width: 100%;
+    }
+    .calculator span.plus{
+        height: 100%;
+    }
+    .calculator span.clear{
+        width: 100%;
+    }
 }
 .calculator span.equal{
   background: #E6C413;
